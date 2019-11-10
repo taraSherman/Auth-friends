@@ -13,7 +13,7 @@ function App() {
     <div className="wrapper">
       <nav>
       {!loggedIn && <Link to='/'>Log In</Link>}
-      {loggedIn && <Link to='/friendlist'>My Friends</Link>}
+      {loggedIn && <Link to='/friends'><h1>Lambda Friends</h1></Link>}
       </nav>
 
       <Route exact path="/" component={Login} />
