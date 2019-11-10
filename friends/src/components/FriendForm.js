@@ -17,7 +17,7 @@ export function FriendForm(props) {
 
   const handleSubmit = event => {
     axiosWithAuth()
-    .post('/friends', addFriend)
+    .post('/api/friends', addFriend)
     .then((response => {
       console.log(response,
         'FriendForm.js, line 21, response to POST request to add friend')
