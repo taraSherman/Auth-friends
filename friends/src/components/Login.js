@@ -26,7 +26,7 @@ const Login = (props) => {
       .then(response => {
         console.log(response.data, 'Login.js, line 27, submission response')
         localStorage.setItem('token', response.data.payload)
-        props.history.push('/FriendForm')
+        props.history.push('/friends')
       })
       .catch(error => {
         console.log(error,
